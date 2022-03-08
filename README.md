@@ -3,11 +3,14 @@
 
 This script generates a Dockerfile with the basic settings to deploy your flask application to heroku. And as a bonus a `steps.txt` with the step by step for you to publish the project.
 
+
+# Note: Run the script inside your project folder.
+
 ## Installation from Pypi
 `pip install sdf-heroku-deploy`
 
 ## Module Usage
-**Run the script inside your project folder**
+
 ```python
 from sdf_heroku_deploy import main
 main()
