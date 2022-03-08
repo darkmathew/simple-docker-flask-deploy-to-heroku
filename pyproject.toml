@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sdf_heroku_deploy"
+version = "1.0.0"
+authors = ["Matheus Santos <78329418+darkmathew@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT"
+description="This script generates a Dockerfile with the basic settings to deploy your flask application to heroku. And as a bonus a steps.txt with the step by step for you to publish the project."
+homepage = "https://github.com/darkmathew/simple-docker-flask-deploy-to-heroku"
+repository = "https://github.com/darkmathew/simple-docker-flask-deploy-to-heroku"
+include = [
+    "LICENSE",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
