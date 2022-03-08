@@ -1,0 +1,26 @@
+[1] - In your flask_app_runner.py file add the line:
+if __name__ == '__main__':
+     app.run(host='0.0.0.0')
+
+[2] - Run the command in terminal: docker build -t my_docker_image:latest .
+
+[3] - Wait for the operation to finish
+
+[4] - Run the command in terminal: docker run -d -p 5000:5000 my_docker_image
+
+[5] - Check if your application is running on http://localhost:5000
+
+[6] - If everything is ok, proceed to the next steps.
+
+[7] - Run the command in terminal: heroku create my_heroku_app_name
+
+[8] - Run the command in terminal: heroku container:login
+
+[9] - If the login was successful, proceed to the next steps.
+
+[10] - Run the command in terminal: heroku container:push web --app my_heroku_app_name
+
+[11] - Run the command in terminal: heroku container:release web --app my_heroku_app_name
+
+[12] - Visit your web app >> https://my_heroku_app_name.herokuapp.com
+
