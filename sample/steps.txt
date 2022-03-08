@@ -1,4 +1,4 @@
-[1] - In your flask_app_runner.py file add the line:
+[1] - In your run.py file add the line:
 if __name__ == '__main__':
      app.run(host='0.0.0.0')
 
