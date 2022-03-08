@@ -37,9 +37,9 @@ Options:
 ```
 ##  Commands usage example
 
-1. `sdfh_cli -img=my_docker_image -hap=my_heroku_app_name -r=flask_app_runner`
+1. `sdfh_cli -img my_docker_image -hap my_heroku_app_name -r flask_app_runner`
 
-2. `sdfh_cli --image_name=my_docker_image --heroku_app_name=my_heroku_app_name --run=flask_app_runner`
+2. `sdfh_cli --image_name my_docker_image --heroku_app_name my_heroku_app_name --run flask_app_runner`
 
 Output 
 ```

@@ -14,4 +14,4 @@ def cli(image_name, heroku_app_name, run):
 
 if __name__ == '__main__':
     cli()
-    
+

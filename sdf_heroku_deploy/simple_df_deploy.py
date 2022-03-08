@@ -1,4 +1,4 @@
-import platform
+from platform import python_version
 from os import remove
 from os.path import isfile
 
@@ -27,8 +27,8 @@ def get_docker_image_type():
 
 
 def get_local_python_version():
-    python_version = platform.python_version()[:4]
-    return python_version
+    py_version = python_version()[:4]
+    return py_version
 
 
 def create_docker_file(run):
