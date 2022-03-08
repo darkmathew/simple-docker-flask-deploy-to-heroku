@@ -1,4 +1,10 @@
-[1] - In your run.py file add the line:
+[x] Please, make sure your project is running in a virtual environment. If you have no idea what this is see: https://realpython.com/python-virtual-environments-a-primer/
+
+[x] Run the command in your terminal: pip install gunicorn
+
+[x] Run the command in your terminal: pip freeze > requirements.txt
+
+[1] - In your =run.py file add the line:
 if __name__ == '__main__':
      app.run(host='0.0.0.0')
 
@@ -12,11 +18,11 @@ if __name__ == '__main__':
 
 [6] - If everything is ok, proceed to the next steps.
 
-[7] - Run the command in terminal: heroku create my_heroku_app_name
+[7] - Run the command in terminal: heroku container:login
 
-[8] - Run the command in terminal: heroku container:login
+[8] - If the login was successful, proceed to the next steps.
 
-[9] - If the login was successful, proceed to the next steps.
+[9] - Run the command in terminal: heroku create my_heroku_app_name
 
 [10] - Run the command in terminal: heroku container:push web --app my_heroku_app_name
 
