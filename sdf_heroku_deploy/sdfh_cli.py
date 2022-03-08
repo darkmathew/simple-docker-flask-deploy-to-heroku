@@ -1,5 +1,5 @@
 import click
-from simple_df_deploy import create_docker_file, create_steps_file
+from sdf_heroku_deploy.simple_df_deploy import create_docker_file, create_steps_file
 
 
 @click.command()
