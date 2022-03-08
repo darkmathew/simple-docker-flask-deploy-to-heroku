@@ -75,6 +75,12 @@ def create_steps_file(run, image_name, heroku_app_name):
     remove_file(file)
 
     content = ""
+
+    content += f"[x] Please, make sure your project is running in a virtual environment. If you have no idea what this is see: https://realpython.com/python-virtual-environments-a-primer/\n\n"
+
+    content += f"[x] Run the command in your terminal: pip install gunicorn\n\n"
+    content += f"[x] Run the command in your terminal: pip freeze > requirements.txt\n\n"
+
     content += f"""[1] - In your {run}.py file add the line:\nif __name__ == '__main__':\n     app.run(host='0.0.0.0')\n\n"""
     content += f"[2] - Run the command in terminal: docker build -t {image_name}:latest .\n\n"
     content += f"[3] - Wait for the operation to finish\n\n"
@@ -90,6 +96,10 @@ def create_steps_file(run, image_name, heroku_app_name):
 
     with open(file, encoding='utf-8', mode='w') as w:
         w.write(content)
+
+
+
+
 
 def main():
     run = get_run_script_file()

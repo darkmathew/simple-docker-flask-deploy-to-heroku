@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sdf_heroku_deploy"
-version = "1.0.6"
+version = "1.0.7"
 authors = ["Matheus Santos <78329418+darkmathew@users.noreply.github.com>"]
 readme = "README.md"
 license = "MIT"
